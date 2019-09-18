@@ -1,2 +1,9 @@
 # Input transfer fdr case:
 ```
+%% Input transfer fdr case:
+% CASE = 1 : fG0 = f0, fG1 = f1
+% CASE = 2 : fG0 != f0, fG1 = f1
+% CASE = 3 : fG0 = f0, fG1 != f1
+% CASE = 4 : fG0 != f0, fG1 != f1
+CASE =3;
+fdrthres = 0.01; % FDR threshold
