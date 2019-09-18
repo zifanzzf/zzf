@@ -32,7 +32,7 @@ result_decoy = result_sort(DecoyType.total==0);
 ```
 [FDR,Iid,Threshold,FinalFDR,P] = ComputeFDR(DecoyType.total,GroupType.total,scores.total,numrst.total,I.total,fdrthres);
 ```
-# global fdr
+# Global fdr
 ```
 ems.global = 0.1;
 ppi0 = 0.3;
@@ -64,7 +64,7 @@ ppi1 = 0.7;
 [p.global,pi0.global,pi1.global,h0.global,h1.global,f0.global,f1.global] = SemiParametricFitting(scores.decoy,scores.target,ems.global,ppi0,ppi1,hh1.global);
 [F0.global,F1.global] = ComputeF(scores.target,scores.decoy,h0.global,h1.global,p.global); 
 ```
-# separate fdr
+# Separate fdr
 ```
 ppi0 = 0.3;
 ppi1 = 0.7;
@@ -95,7 +95,7 @@ hh1.separate = c(i-1);
 [p.separate,pi0.separate,pi1.separate,h0.separate,h1.separate,f0.separate,f1.separate] = SemiParametricFitting(Decoyscores_group,Targetscores_group,ems.separate,ppi0,ppi1,hh1.separate);
 [F0.separate,F1.separate] = ComputeF(Targetscores_group,Decoyscores_group,h0.separate,h1.separate,p.separate);    
 ```
-# transfer fdr
+# Transfer fdr
 ```
 if CASE == 1
     maxiter = 10000;
