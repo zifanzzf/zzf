@@ -10,7 +10,8 @@ fdrthres = 0.01; % FDR threshold
 ```
 pathin = '/Users/yixinpei/PosdocResearch/Transfer fdr/code/testData/fG0!=f0_fG1!=f1';
 [result] = ReadDatResultFolder(pathin);
-%% Judge Group
+# Judge Group
+```
 % GroupType: 0 is Group; 1 is nonGroup.
 % DecoyType: 0 is Decoy; 1 is Target.
 DecoyTag = 'REVERSE_'; % the tag for the decoy database
